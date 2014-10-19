@@ -28,7 +28,7 @@ python sudoku_generator.py base.txt <difficulty>
 
 ## Difficulties & Sample Results
 - easy
-  - <pre>
+  - ```
     6|_|4|_|_|1|_|7|9
 	_|8|7|6|_|_|1|_|_
 	5|_|3|9|_|8|2|_|_
@@ -38,9 +38,9 @@ python sudoku_generator.py base.txt <difficulty>
 	1|3|_|7|_|9|6|5|_
 	7|9|_|_|5|6|_|2|1
 	_|_|5|1|2|_|_|8|7
-	</pre>
+	```
 - medium
-  - <pre>
+  - ```
 	_|_|_|_|_|_|_|7|8
 	5|_|_|7|_|_|_|4|2
 	9|_|8|4|_|6|_|_|1
@@ -50,9 +50,9 @@ python sudoku_generator.py base.txt <difficulty>
 	2|1|_|9|7|_|3|_|_
 	8|9|_|_|5|_|2|1|_
 	_|6|_|_|4|_|8|_|7
-	</pre>
+	```
 - hard
-  - <pre>
+  - ```
 	_|_|_|_|_|_|_|5|_
 	_|8|9|5|_|_|1|_|_
 	5|_|_|4|1|2|_|_|_
@@ -62,9 +62,9 @@ python sudoku_generator.py base.txt <difficulty>
 	9|_|8|6|_|_|_|_|_
 	_|_|_|3|2|1|_|_|7
 	3|_|2|_|8|_|5|_|4
-	</pre>
+	```
 - extreme
-  - <pre>
+  - ```
 	_|4|_|_|1|_|9|_|_
 	_|_|5|_|_|_|6|_|4
 	_|7|_|_|2|_|_|1|_
@@ -74,4 +74,4 @@ python sudoku_generator.py base.txt <difficulty>
 	5|_|3|2|_|_|_|7|_
 	_|_|_|3|_|6|_|4|1
 	_|_|2|8|_|_|_|_|6
-	</pre>
+	```

@@ -27,51 +27,14 @@ python sudoku_generator.py base.txt <difficulty>
 ```
 
 ## Difficulties & Sample Results
-- easy
-  - ```
-    6|_|4|_|_|1|_|7|9
-	_|8|7|6|_|_|1|_|_
-	5|_|3|9|_|8|2|_|_
-	2|4|_|_|_|_|5|6|_
-	8|7|_|3|6|5|_|_|2
-	3|_|_|_|1|4|_|9|8
-	1|3|_|7|_|9|6|5|_
-	7|9|_|_|5|6|_|2|1
-	_|_|5|1|2|_|_|8|7
-	```
-- medium
-  - ```
-	_|_|_|_|_|_|_|7|8
-	5|_|_|7|_|_|_|4|2
-	9|_|8|4|_|6|_|_|1
-	_|_|6|2|3|1|7|_|_
-	_|_|3|_|_|7|4|5|6
-	7|8|9|_|_|_|_|_|_
-	2|1|_|9|7|_|3|_|_
-	8|9|_|_|5|_|2|1|_
-	_|6|_|_|4|_|8|_|7
-	```
-- hard
-  - ```
-	_|_|_|_|_|_|_|5|_
-	_|8|9|5|_|_|1|_|_
-	5|_|_|4|1|2|_|_|_
-	_|_|_|_|7|9|4|2|_
-	_|6|_|_|_|_|7|8|_
-	8|9|_|_|4|6|_|_|_
-	9|_|8|6|_|_|_|_|_
-	_|_|_|3|2|1|_|_|7
-	3|_|2|_|8|_|5|_|4
-	```
-- extreme
-  - ```
-	_|4|_|_|1|_|9|_|_
-	_|_|5|_|_|_|6|_|4
-	_|7|_|_|2|_|_|1|_
-	3|_|_|_|9|_|4|_|5
-	9|8|_|_|_|_|1|_|_
-	_|_|_|1|3|_|_|_|_
-	5|_|3|2|_|_|_|7|_
-	_|_|_|3|_|6|_|4|1
-	_|_|2|8|_|_|_|_|6
-	```
+### easy
+<table><tr><td> </td><td> </td><td> </td><td>7</td><td>9</td><td>8</td><td> </td><td>4</td><td>2</td></tr><tr><td> </td><td>7</td><td>8</td><td> </td><td> </td><td> </td><td>6</td><td> </td><td>3</td></tr><tr><td>1</td><td>4</td><td> </td><td> </td><td>6</td><td>3</td><td> </td><td>7</td><td>8</td></tr><tr><td>5</td><td>6</td><td>4</td><td> </td><td>8</td><td> </td><td> </td><td>3</td><td>1</td></tr><tr><td>8</td><td> </td><td> </td><td> </td><td>2</td><td>1</td><td>5</td><td> </td><td>4</td></tr><tr><td> </td><td> </td><td> </td><td>6</td><td> </td><td>4</td><td> </td><td>9</td><td> </td></tr><tr><td>3</td><td> </td><td>5</td><td>2</td><td> </td><td> </td><td>7</td><td> </td><td> </td></tr><tr><td>4</td><td> </td><td>6</td><td>8</td><td>7</td><td>9</td><td> </td><td>1</td><td> </td></tr><tr><td>7</td><td>8</td><td> </td><td>1</td><td>3</td><td> </td><td>4</td><td>2</td><td>6</td></tr></table>
+
+### medium
+<table><tr><td>3</td><td>1</td><td> </td><td> </td><td>6</td><td> </td><td> </td><td> </td><td> </td></tr><tr><td> </td><td> </td><td>9</td><td> </td><td> </td><td> </td><td>6</td><td>2</td><td> </td></tr><tr><td>4</td><td> </td><td> </td><td> </td><td>9</td><td>8</td><td> </td><td> </td><td>3</td></tr><tr><td> </td><td> </td><td>3</td><td>9</td><td>8</td><td> </td><td> </td><td>4</td><td>1</td></tr><tr><td> </td><td>7</td><td>8</td><td>1</td><td> </td><td> </td><td> </td><td>5</td><td> </td></tr><tr><td> </td><td> </td><td>2</td><td>6</td><td> </td><td>5</td><td> </td><td> </td><td>9</td></tr><tr><td> </td><td> </td><td> </td><td> </td><td>4</td><td>6</td><td>7</td><td>9</td><td>8</td></tr><tr><td>5</td><td>6</td><td> </td><td> </td><td> </td><td>9</td><td>1</td><td> </td><td> </td></tr><tr><td>8</td><td> </td><td>7</td><td> </td><td> </td><td>3</td><td>4</td><td> </td><td> </td></tr></table>
+
+### hard
+<table><tr><td> </td><td> </td><td> </td><td>2</td><td> </td><td> </td><td> </td><td>6</td><td> </td></tr><tr><td> </td><td>1</td><td> </td><td> </td><td> </td><td>4</td><td>8</td><td> </td><td> </td></tr><tr><td>6</td><td>4</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>3</td><td> </td></tr><tr><td> </td><td> </td><td>6</td><td> </td><td>7</td><td>8</td><td> </td><td> </td><td>2</td></tr><tr><td> </td><td> </td><td>1</td><td>6</td><td> </td><td>3</td><td> </td><td> </td><td>8</td></tr><tr><td> </td><td>8</td><td>9</td><td> </td><td> </td><td> </td><td> </td><td>5</td><td>3</td></tr><tr><td> </td><td>9</td><td> </td><td> </td><td> </td><td> </td><td>4</td><td>2</td><td> </td></tr><tr><td>2</td><td> </td><td> </td><td>7</td><td> </td><td> </td><td> </td><td> </td><td>5</td></tr><tr><td>1</td><td>5</td><td> </td><td>4</td><td>2</td><td> </td><td>7</td><td> </td><td> </td></tr></table>
+
+### extreme
+<table><tr><td> </td><td> </td><td> </td><td>7</td><td> </td><td> </td><td>3</td><td> </td><td>2</td></tr><tr><td> </td><td> </td><td> </td><td>4</td><td> </td><td> </td><td>9</td><td> </td><td> </td></tr><tr><td>8</td><td>7</td><td> </td><td> </td><td>3</td><td> </td><td> </td><td> </td><td>5</td></tr><tr><td> </td><td>2</td><td> </td><td> </td><td>5</td><td> </td><td> </td><td>8</td><td> </td></tr><tr><td> </td><td> </td><td>7</td><td>2</td><td> </td><td>1</td><td> </td><td> </td><td> </td></tr><tr><td>6</td><td> </td><td>5</td><td> </td><td> </td><td>9</td><td>4</td><td> </td><td> </td></tr><tr><td>3</td><td> </td><td>1</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td></tr><tr><td>4</td><td>6</td><td> </td><td> </td><td>8</td><td> </td><td> </td><td> </td><td> </td></tr><tr><td> </td><td> </td><td> </td><td>5</td><td>1</td><td>3</td><td> </td><td> </td><td> </td></tr></table>

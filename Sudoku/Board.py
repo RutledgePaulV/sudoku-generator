@@ -5,7 +5,7 @@ from Cell import Cell
 
 class Board:
 
-    # intializing a board
+    # initializing a board
     def __init__(self, numbers=None):
 
         # we keep list of cells and dictionaries to point to each cell

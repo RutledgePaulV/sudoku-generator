@@ -10,9 +10,6 @@ This was one of my projects for a math modeling class in college.
 This is not being actively developed, though there are certainly
 improvements that could be made.
 
-## Dependencies
-This project relies on numpy for performant array operations. `pip install numpy`.
-
 ## So what?
 Yep, lots of sudoku generators exist. Something cool that makes this one unique is
 the concept of board density in relation to difficulty. The basic idea is that the

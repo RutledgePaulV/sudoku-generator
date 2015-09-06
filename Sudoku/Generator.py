@@ -29,7 +29,7 @@ class Generator:
             for x in range(0, iterations):
 
                 # to get a random column/row
-                case = random.randint(0, 3)
+                case = random.randint(0, 4)
 
                 # to get a random band/stack
                 block = random.randint(0, 2) * 3

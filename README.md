@@ -20,7 +20,7 @@ the most difficult puzzle.
 
 ## How do I use it?
 ```bash
-python sudoku_generator.py base.txt <difficulty>
+python3 sudoku_generator.py base.txt <difficulty>
 ```
 
 ## Difficulties & Sample Results

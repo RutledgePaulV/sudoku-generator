@@ -1,5 +1,9 @@
-from Board import *
-from Solver import *
+import random
+from functools import reduce
+
+from Sudoku.Board import *
+from Sudoku.Solver import *
+
 
 class Generator:
 
@@ -10,8 +14,8 @@ class Generator:
         f = open(starting_file)
 
         # reducing file to a list of numbers
-        numbers = filter(lambda x: x in '123456789',list(reduce(lambda x,y:x+y,f.readlines())))
-        numbers = map(int,numbers)
+        numbers = filter(lambda x: x in '123456789', list(reduce(lambda x, y: x + y, f.readlines())))
+        numbers = list(map(int, numbers))
 
         # closing file
         f.close()
@@ -23,7 +27,7 @@ class Generator:
     def randomize(self, iterations):
 
         # not allowing transformations on a partial puzzle
-        if len(self.board.get_used_cells())==81:
+        if len(self.board.get_used_cells()) == 81:
 
             # looping through iterations
             for x in range(0, iterations):
@@ -36,9 +40,9 @@ class Generator:
 
                 # in order to select which row and column we shuffle an array of
                 # indices and take both elements
-                options = range(0,3)
+                options = list(range(0, 3))
                 random.shuffle(options)
-                piece1, piece2 = options[0],options[1]
+                piece1, piece2 = options[0], options[1]
 
                 # pick case according to random to do transformation
                 if case == 0:
@@ -54,15 +58,15 @@ class Generator:
 
     # method gets all possible values for a particular cell, if there is only one
     # then we can remove that cell
-    def reduce_via_logical(self, cutoff = 81):
+    def reduce_via_logical(self, cutoff=81):
         cells = self.board.get_used_cells()
         random.shuffle(cells)
         for cell in cells:
-                if len(self.board.get_possibles(cell)) == 1:
-                    cell.value = 0
-                    cutoff -= 1
-                if cutoff == 0:
-                    break
+            if len(self.board.get_possibles(cell)) == 1:
+                cell.value = 0
+                cutoff -= 1
+            if cutoff == 0:
+                break
 
     # method attempts to remove a cell and checks that solution is still unique
     def reduce_via_random(self, cutoff=81):
@@ -70,15 +74,15 @@ class Generator:
         existing = temp.get_used_cells()
 
         # sorting used cells by density heuristic, highest to lowest
-        new_set = [(x,self.board.get_density(x)) for x in existing]
-        elements= [x[0] for x in sorted(new_set, key=lambda x: x[1], reverse=True)]
+        new_set = [(x, self.board.get_density(x)) for x in existing]
+        elements = [x[0] for x in sorted(new_set, key=lambda x: x[1], reverse=True)]
 
         # for each cell in sorted list
         for cell in elements:
             original = cell.value
 
             # get list of other values to try in its place
-            complement = [x for x in range(1,10) if x != original]
+            complement = [x for x in range(1, 10) if x != original]
             ambiguous = False
 
             # check each value in list of other possibilities to try
@@ -106,9 +110,8 @@ class Generator:
             if cutoff == 0:
                 break
 
-
     # returns current state of generator including number of empty cells and a representation
     # of the puzzle
     def get_current_state(self):
         template = "There are currently %d starting cells.\n\rCurrent puzzle state:\n\r\n\r%s\n\r"
-        return template % (len(self.board.get_used_cells()),self.board.__str__())
+        return template % (len(self.board.get_used_cells()), self.board.__str__())
